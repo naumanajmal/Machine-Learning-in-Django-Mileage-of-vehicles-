@@ -1,0 +1,12 @@
+<form method="post" enctype="multipart/form-data" action="predictMPG">
+	{% csrf_token %}
+	<div> <label>cylinder</label><input type="text" name="cylinderval" value="2"><br></div>
+	<div> <label>displacment</label><input type="text" name="dispval" value="2"><br></div>
+	<div> <label>horsepower</label><input type="text" name="hrspwrval" value="1202"><br></div>
+	<div> <label>weight</label><input type="text" name="weightval" value="500"><br></div>
+	<div> <label>acceleration</label><input type="text" name="accval" value="5"><br></div>
+	<div> <label>model</label><input type="text" name="modelval" value="2"><br></div>
+	<div> <label>origin</label><input type="text" name="originval" value="2"><br></div>
+	<input type="submit" name="submit">
+</form>
+<p>the mpg score is {{scoreval}}</p>
